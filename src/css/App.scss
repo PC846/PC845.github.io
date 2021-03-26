@@ -1,0 +1,250 @@
+$bg-color: rgb(248, 248, 248);
+$ffp: 'Roboto Slab', serif;
+$ffs:'Montserrat', sans-serif;
+$color-gray: rgb(77, 77, 77);
+$color-black: #000;
+$stripe-height: 7px;
+$btn-color: $color-gray;
+$btn-background: #fff;
+$btn-color-hover: #fff;
+$btn-background-hover: $color-gray;
+$border-color: $color-gray;
+$border-color-hover: $color-black;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4d4d4d;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: $bg-color;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+}
+
+
+ 
+
+
+.form {
+  position:absolute;
+  width: 50%;
+  left:54em;
+  top:80em;
+  background-color: white;
+  border: 1px solid rgb(180, 180, 180);
+  box-shadow: 5px 10px;
+  border-radius: 10px;
+  padding-top: 1em;
+
+  h2,h4{
+    position:absolute;
+    padding-left: 1em;
+    left: 17em;
+    bottom: 10em;
+    text-align:right;
+  }
+
+  h4{
+    left: 45em;
+    top: 14em;
+  }
+  form {
+    width: 300px;
+    padding-left: 1em;
+  }
+  
+}
+
+
+.wrapper-box{
+  position:absolute;
+  border: 2px solid white;
+  height: 77vh;
+  top: 65em;
+  width:110vw;
+  left: -2px;
+  z-index: -1;
+  background-color:#746794;
+  
+  
+    h3 {
+      position: absolute;
+      font-family: $ffs;
+      color:white;
+      top: 26em;
+      left: 4em;
+    }
+   
+  .animated-title {
+    color: #ffffff;
+    font-family: $ffs;
+    height: 90vmin;
+    left: 26%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 40px;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: .5vmin solid #ffffff;
+    width: 30vw;
+    top: 0;
+  }
+  .animated-title > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text-top div span:first-child {
+    color: #c4c4c4;
+  }
+  .animated-title > div.text-bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%);
+  }
+  
+  .bottom-svg {
+    position:relative;
+    bottom: 10em;
+    right: 12em;
+  }
+}
+
+#Mycanvas {
+  position:relative;
+  top: 40em;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  40%, 60% { transform: translate3d(0, 50%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes stripe-slide {
+  0% { background-position: 0% 0; }
+  100% { background-position: 100% 0; }
+}
+
+@media only screen and (max-width: #{$screen-sm-min}) {
+  
+  .form {
+    left: 10em;
+    bottom: 0em;
+    top: 4em;
+    height: 500px;
+    h2,h4 {
+      display:none;
+    }
+
+    form {
+      width: 250px;
+    }
+  }
+
+  .wrapper-box {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: #{$screen-md-min}) {
+
+  .form {
+    left: 17em;
+    bottom: 0em;
+    top: 4em;
+    height: 500px;
+    h2,h4 {
+      display:none;
+    }
+
+    form {
+      width: 250px;
+    }
+  }
+
+  .wrapper-box {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: #{$screen-lg-min}) {
+  .form {
+    left: 17em;
+    bottom: 0em;
+    top: 15em;
+    height: 500px;
+    h2,h4 {
+      display:none;
+    }
+
+    form {
+      width: 250px;
+    }
+  }
+
+  .wrapper-box {
+    display:none;
+  }
+}
