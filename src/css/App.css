@@ -291,4 +291,24 @@ body {
     width: 60%;
   }
 }
+
+@media (max-width: 2000px) {
+  .form {
+    left: 58em;
+  }
+  .form h2 {
+    left: 15em;
+  }
+  .form h4 {
+    left: 35em;
+  }
+}
+
+@media (max-width: 1700px) {
+  .form h2 {
+    top: 2em;
+    left: 20em;
+    font-size: 1.5em;
+  }
+}
 /*# sourceMappingURL=App.css.map */
