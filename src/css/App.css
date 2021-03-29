@@ -165,14 +165,6 @@ body {
   right: 12em;
 }
 
-#Mycanvas {
-  position: relative;
-  top: 40em;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
 @-webkit-keyframes showTopText {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -243,57 +235,60 @@ body {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media (max-width: 800px) {
+  .wrapper-box {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .form {
+    left: 5em;
+    width: 25em;
+    top: 60em;
+    width: 65%;
+  }
+  .form h2, .form h4 {
+    display: none;
+  }
+  .form form {
+    width: 250px;
+  }
+}
+
+@media (max-width: 700px) {
   .form {
     left: 10em;
-    bottom: 0em;
-    top: 4em;
-    height: 500px;
+    width: 80%;
+    top: 55em;
   }
   .form h2, .form h4 {
-    display: none;
-  }
-  .form form {
-    width: 250px;
-  }
-  .wrapper-box {
     display: none;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 800px) {
   .form {
-    left: 17em;
-    bottom: 0em;
-    top: 4em;
-    height: 500px;
+    left: 3em;
+    width: 100%;
   }
-  .form h2, .form h4 {
-    display: none;
+  .form h2 {
+    left: 22em;
+    top: 2em;
+    font-size: 1.5em;
   }
-  .form form {
-    width: 250px;
-  }
-  .wrapper-box {
-    display: none;
+  .form h4 {
+    left: 30em;
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .form {
-    left: 17em;
-    bottom: 0em;
-    top: 15em;
-    height: 500px;
-  }
-  .form h2, .form h4 {
-    display: none;
-  }
-  .form form {
-    width: 250px;
-  }
+@media (max-width: 900px) {
   .wrapper-box {
-    display: none;
+    top: 70em;
+    width: 200vw;
+  }
+  .form {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=App.css.map */

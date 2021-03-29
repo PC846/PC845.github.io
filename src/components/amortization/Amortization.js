@@ -36,7 +36,7 @@ function Amortization(props) {
 
   return (
     <Table>
-      <h2>Monthly Replayment <br /><br /> ${repaymentAmount}</h2>
+      <h2>Monthly Repayment <br /><br /> ${repaymentAmount}</h2>
       <h4>Amortization Table</h4>
       
       

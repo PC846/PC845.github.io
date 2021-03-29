@@ -297,3 +297,29 @@ h2 {
         opacity: 0.20;
       }
   }
+
+  @media(max-width: 900px) {
+
+    .top-svg {
+ 
+      right: 5em;
+    }
+   
+    .description {
+      left: 40em;
+    }
+
+    .real-time {
+      left: 5em;
+    }
+
+    .real-time-desc {
+      left: 10em;
+    }
+
+    .graph-container {
+      left: 7em;
+    }
+  }
+
+ 
