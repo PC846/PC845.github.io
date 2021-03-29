@@ -99,8 +99,7 @@ $screen-lg-min: 992px;
     font-family: 'Righteous', serif;
     font-size: 7em; 
     text-shadow: .03em .03em 0 rgb(32, 32, 32);
-    left: 42%;
-    top: 4em;
+    top: -1em;
     
    
     }
@@ -136,15 +135,15 @@ $screen-lg-min: 992px;
         padding:0;
         padding:0;
         margin:0;
-        left: 40%;
-        top: 32em;
+        
+        top: 35em;
         font-weight:900;
         
     }
 
 .motto {
     position:absolute;
-    top: 21.5em;
+    top: 24.5em;
     text-align: right;
     left: 50%;
     font-family: 'Righteous', serif;
@@ -273,8 +272,8 @@ $screen-lg-min: 992px;
         position:absolute;
         margin:0;
         padding:0;
-        left: 47%;
-        top: 47em;
+        left: 9em;
+        top: 7em;
         text-decoration: none;
         text-transform: uppercase;
         padding: 16px 36px 22px;
@@ -343,127 +342,73 @@ $screen-lg-min: 992px;
 
 /* MEDIA */
 
-@media only screen and (max-width: #{$screen-sm-min}) {
+@media(max-width: 600px) {
     .logo {
-        font-size: 4em;
-        
-    }
-
-    .motto {
-        font-size: .7em;
-        right: 14em;
-        bottom: -4em;
-    }
-
-    .btn {
-        
-        height: 50px;
-        font-size: 10px;
-        top: 0em;
-        
-        right: 4em;
-   
+     
+        left: 0em;
+        margin-right: 1em;
+        top: 1em;
     
-        
+      }
+
+      .motto {
+          top: 29em;
+          left: 10em;
+      }
+      .btn {
+          top: 30em;
+          left: 6em;
+      }
+
+     .synonpsis {
+         right: 1em;
+         left: -1em;
+         padding: 1em;
+         text-align:center;
+         
+     }
+
+
+}
+
+@media(max-width:700px){
+    .logo {
+        left: .5em;
+        top: 1em;
+    }
+
+    .motto{
+        top: 23em;
     }
 
     .synonpsis {
         top: 35em;
-        font-size: 10px;
-        right: 11em;
-    }
-
-    .container {
-        left: 8em;
-    }
-
-    .header {
-        display:none;
-    }
-}
-
-@media only screen and (max-width: #{$screen-md-min}) {
-
-    .logo {
-        font-size: 6em;
-        top: -12.5em;
-    
-    }
-
-    .motto {
-        font-size: .7em;
-        right: 14em;
-        top:12em;
-     
+        left: 10em;
     }
 
     .btn {
-        
-        height: 50px;
-        font-size: 10px;
-        top:-115em;
-        left: 20em;
-   
-    
-        
-    }
-
-    .synonpsis {
-        top: 30em;
-        font-size: 10px;
-        left: 35em;
-        
-    }
-
-    .container {
-        left: 8em;
-    }
-
-    .header {
-        display:none;
+        left: 12em;
+        top: 32em;
     }
 }
 
-@media only screen and (max-width: #{$screen-lg-min}) {
-    .logo {
-        font-size: 4em;
-        top: -6em;
-     
-    
-    }
 
-    .motto {
-        font-size: .7em;
-     
-        top:11em;
-     
+@media(max-width: 800px) {
+    .logo{
+        left: .9em;
+        top: -1em;
+        font-size: 7.5em;
     }
-
-    .btn {
-        
-        height: 50px;
-        font-size: 10px;
-        top: -35em;
-        left: 15em;
-   
     
-        
+    .motto{
+        top: 19em;
     }
 
     .synonpsis {
-        top: 25em;
-        font-size: 10px;
-        left: 45em;
-        
+        top: 27em;
     }
 
-    .container {
-        left: 8em;
-        top: 10em;
-    }
-
-    .header {
-        display:none;
+    .btn{
+        top: 4em;
     }
 }
-
